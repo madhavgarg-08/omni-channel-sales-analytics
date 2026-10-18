@@ -28,7 +28,7 @@ This is known as **ROPO (Research Online, Purchase Offline)**. This project buil
 
 - **Name:** RetailHive Omnichannel Transaction Database (`retailhive_10k.csv`)
 - **Source:** Kaggle
-- **Size:** 10,000 multi-channel transaction records
+- **Size:** 12,000 multi-channel transaction records
 
 ## Methodology
 
@@ -38,6 +38,13 @@ This is known as **ROPO (Research Online, Purchase Offline)**. This project buil
 4. **Data warehouse:** Designed a PostgreSQL star schema with a fact table and customer, product, date, region, and channel dimension tables.
 5. **Statistical validation:** Ran a Chi-Square Test of Independence and an Independent Samples T-Test.
 6. **Dashboard:** Built a Power BI report with DAX measures.
+
+## Key Findings
+
+- **ROPO conversions:** Of 12,000 transactions, 367 online-to-store conversions were identified, where a customer's digital interaction was followed by a store purchase. These split almost evenly between channels: 180 from Online and 187 from Mobile.
+- **Channel vs. region (Chi-Square test):** χ² = 5.48, df = 2, p = 0.0646. Since p > 0.05, there is no statistically significant association between the digital channel and the customer's region, although the result is close to the threshold.
+- **Revenue by channel (Independent T-Test):** t = 0.20, p = 0.8405. There is no significant difference in mean digital revenue contribution between Online and Mobile customers.
+- **Takeaway:** Online and Mobile contribute to offline purchases at a similar level, and neither channel nor region significantly changes the revenue influence. Digital channels can be evaluated together instead of being treated as separate sources of ROPO value.
 
 ## Dashboard
 
