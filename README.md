@@ -45,7 +45,7 @@ The Power BI dashboard has 5 KPI cards, 5 visualizations, and 4 slicers (Year, R
 
 ![Dashboard overview](dashboard_overview/Dashboard.png)
 
-![KPI cards](dashboard_overview/KPICards.png)
+![KPI cards](dashboard_overview/KPI%20Cards.png)
 
 ## Repository Structure
 
